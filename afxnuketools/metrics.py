@@ -20,7 +20,10 @@ def _centroid(region, node_name, channel, step=1):
             increases computation speed by a factor of step^2
 
     Returns:
-        float: Returns tuple (x, y)
+        float: Returns tuple (mean_x, mean_y, mean_weight)
+        mean_x is the mean of the x cords weighted by channel values
+        mean_y is the mean of the y cords weighted by channel values
+        mean_weight is the mean of the channel values
 
     """
     mean_x = 0.0
