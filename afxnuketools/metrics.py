@@ -149,7 +149,7 @@ def max_value(node, channel, step=1):
 
         for r in mp.results:
             if mp.state() is False or issubclass(type(r), Exception):
-                centroid = None
+                max_val = None
                 del task
                 raise Exception(str(r))
             max_val = max(max_val, r)
